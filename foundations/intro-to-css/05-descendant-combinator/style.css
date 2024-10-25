@@ -5,6 +5,15 @@
   text-align: center;
 } */
 
+/*
+  In CSS chaining the 2 different classes WITHOUT spaces only works 
+  elements that also have those 2 classes e.g. class="container text"
+
+  But it will not style e.g a parent <div class="container"> with child <p class="text">
+  to use descendant combinator you need spaces between the parent+child
+  in CSS e.g .container .text { color: red;}
+*/
+
 .container .text {
   background-color: yellow;
   color: red;
