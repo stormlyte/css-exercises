@@ -8,7 +8,7 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
@@ -23,13 +23,19 @@ body {
   font-weight: bold;
 } 
 
-.button {
+button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.child {
+/* 
+Could have removed div from div.text, and then switched around 
+so .child came after .text since if there's 2 code conflicts of 
+same specificty, then the last take precidence 
+*/
+
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
