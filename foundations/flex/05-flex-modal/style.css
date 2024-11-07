@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* * {
+  border: red 1px solid;
+} */
+
 html, body {
   height: 100%;
 }
@@ -7,6 +11,7 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
+  padding: 0;
   background: #aaa;
   color: #333;
   /* I'll give you this one for free lol */
@@ -20,6 +25,25 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /* Additions */
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.header {
+  /* Additions */
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  /* Additions */
+  margin-bottom: 1rem;
 }
 
 .icon {
@@ -27,7 +51,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+  min-width: 42px;
   height: 42px;
   border-radius: 50%;
   display: flex;
