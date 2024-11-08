@@ -1,10 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* * {
+  border: 2px red solid;
+} */
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+/* Creates the nav bard on top */
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+/* Content in the middle */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+}
+
+/* Nav bottom bar */
+.footer {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+/* Remove links decoration */
+a {
+  text-decoration: none;
+  padding-right: 1rem;
+  color: grey;
+
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
 }
 
 img {
@@ -16,6 +61,10 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* Add padding */
+  padding: 8px;
+  margin-top: 1rem;
+
 }
 
 input {
